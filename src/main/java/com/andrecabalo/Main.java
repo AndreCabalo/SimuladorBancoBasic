@@ -27,6 +27,8 @@ public class Main {
                 
                 """,nome,tipoConta,saldoEmConta);
 
+
+        while(opcaoSelecionada != 4) {
 //Menu operações
         System.out.println("""
                 Operações
@@ -58,7 +60,7 @@ public class Main {
                 break;
             case 3:
                 System.out.println("Depositando dinheiro");
-                System.out.println("Digite o valor que deseja depositar: (UTILIZE VIRGULA e não ponto");
+                System.out.println("Digite o valor que deseja depositar: (UTILIZE VIRGULA e não ponto)");
                 double valorADepositar = scanner.nextDouble();
                 saldoEmConta += valorADepositar;
                 System.out.printf("Seu atual saldo é de : R$ %.2f %n", saldoEmConta);
@@ -66,8 +68,7 @@ public class Main {
             case 4:
                 System.out.println("Saindo da aplicação...");
                 break;
-
-
+        }
 
         }
 
